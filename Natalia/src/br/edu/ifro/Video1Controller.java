@@ -5,12 +5,13 @@
  */
 package br.edu.ifro;
 
+import java.awt.Button;
+import java.awt.TextField;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Label;
 
 /**
  *
@@ -19,12 +20,18 @@ import javafx.scene.control.Label;
 public class Video1Controller implements Initializable {
     
     @FXML
-    private Label label;
+    private TextField txtNumero1, txtNumero2, txtResultat;
     
     @FXML
-    private void handleButtonAction(ActionEvent event) {
-        System.out.println("You clicked me!");
-        label.setText("Hello World!");
+    private Button btnSomme;
+    
+    @FXML
+    private void somme(ActionEvent event) {
+        Double num1 = Double.parseDouble(txtNumero1.getText());
+        Double num2 = Double.parseDouble(txtNumero2.getText());
+        Double resul = num1 = num2;
+        
+      
     }
     
     @Override

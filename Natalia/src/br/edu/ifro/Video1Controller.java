@@ -29,8 +29,9 @@ public class Video1Controller implements Initializable {
     private void somme(ActionEvent event) {
         Double num1 = Double.parseDouble(txtNumero1.getText());
         Double num2 = Double.parseDouble(txtNumero2.getText());
-        Double resul = num1 = num2;
+        Double resul = num1 + num2;
         
+        txtResultat.setText(resul.toString());
       
     }
     
